@@ -34,7 +34,7 @@ angular.module('fantasyDragRace')
      },
     { appID: 4,
       name: "RuPaul Fantasy Drag Race",
-      photo: "RuPaul.jpg",
+      photo: "RuPaul3.jpg",
       photo2: "RuPaul2.jpg",
       description: "An interactive game where players earn points each week based on predictions of who will be eliminated",
       stack: "Tech Stack: AngularJS, Node.js, Express, PostgreSQL",
