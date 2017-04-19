@@ -3,7 +3,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title>RuPaul's Fantasy Drag Race</title>
+  <title>Robb Marsee: Software Engineer</title>
   <meta name="RuPaul's Fantasy Drag Race" content="Fantasy Drag Race is a game you can play throughout season 9 of RuPaul's Drag Race. ">
   <meta name="keywords" content="RuPaul,Ru,Paul,Drag Queens, Drag, Drag Race">
 
@@ -32,12 +32,9 @@
   <script src="app/app.js"></script>
   <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
   <!-- <script src="lib/angular-drag-and-drop-lists.min.js"></script> -->
-  <script src='app/controllers/authController.js'></script>
-  <script src='app/controllers/modalInstanceController.js'></script>
-  <script src='app/controllers/invalidLoginController.js'></script>
+
   <script src='app/controllers/selectionController.js'></script>
-  <script src='app/controllers/resultsController.js'></script>
-  <script src='app/controllers/rankingController.js'></script>
+
 
   <!-- Other JavaScript -->
 
@@ -50,33 +47,7 @@
   <script src="animation.js"></script>
 
 </head>
-
-
 <body>
-
-<header id="header">
-  <div class="container">
-  
-    <div id="logo" class="pull-left">
-      <a href="#hero"><img class="small-logo" src="img/logo.png" alt="" title="" /></img><p class="logo">FANTASY</p></a>
-    </div>
-      
-    <nav id="nav-menu-container">
-      <ul class="nav-menu">
-        <li class="menu-active"><a href="#hero">Home</a></li>
-        <li><a href="#services">Rules</a></li>
-        <li><a href="#portfolio">Select Your Queens</a></li>
-        <li><a href="#ranking">Rankings</a></li>
-        <!-- <li><a href="#testimonials">About Me</a></li> -->
-        <li id="logout" class="hideLogout"><a onclick='logout()'>Logout</a></li>
-      </ul>
-    </nav>
-    
-  </div>
-</header>
-
   <div ui-view></div>
-
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> 
 </body>
 </html>
