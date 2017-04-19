@@ -1,30 +1,30 @@
 const router = require('express').Router();
 const authController = require('./controllers/authController.js');
-const selectionController = require('./controllers/selectionController.js');
-const resultController = require('./controllers/resultController.js');
-const teamController = require('./controllers/teamController.js');
+// const selectionController = require('./controllers/selectionController.js');
+// const resultController = require('./controllers/resultController.js');
+// const teamController = require('./controllers/teamController.js');
 
-router.get('/home', authController.checkUser);
-router.get('/login', authController.checkUser);
-router.get('/mobile', authController.mobileView);
-router.get('/processing', authController.porcessing);
+// router.get('/home', authController.checkUser);
+// router.get('/login', authController.checkUser);
+// router.get('/mobile', authController.mobileView);
+// router.get('/processing', authController.porcessing);
 
-router.post('/api/resultWeeklySubmission', resultController.submitWeeklyResult);
-router.post('/api/resultFinalSubmission', resultController.submitFinalsResult);
-router.post('/api/resultTootSubmission', resultController.submitTootResult);
+// router.post('/api/resultWeeklySubmission', resultController.submitWeeklyResult);
+// router.post('/api/resultFinalSubmission', resultController.submitFinalsResult);
+// router.post('/api/resultTootSubmission', resultController.submitTootResult);
 
-router.get('/api/ranking', resultController.sendRanking);
+// router.get('/api/ranking', resultController.sendRanking);
 
-router.post('/api/finalSelection', selectionController.submitFinalsResult);
-router.post('/api/weeklySelection', selectionController.submitWeeklySelection);
-router.post('/api/tootBootSelection', selectionController.submitTootBootSelection);
+// router.post('/api/finalSelection', selectionController.submitFinalsResult);
+// router.post('/api/weeklySelection', selectionController.submitWeeklySelection);
+// router.post('/api/tootBootSelection', selectionController.submitTootBootSelection);
 
-router.post('/api/joinTeam', teamController.joinTeam);
-router.post('/api/createTeam', teamController.createTeam);
+// router.post('/api/joinTeam', teamController.joinTeam);
+// router.post('/api/createTeam', teamController.createTeam);
 
-router.post('/api/signup', authController.signup);
-router.post('/api/login', authController.login);
-router.get('/api/logout', authController.logout);
+// router.post('/api/signup', authController.signup);
+// router.post('/api/login', authController.login);
+// router.get('/api/logout', authController.logout);
 
 router.get('/*', authController.checkUser);
 
