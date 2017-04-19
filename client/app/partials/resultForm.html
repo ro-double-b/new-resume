@@ -1,0 +1,100 @@
+<div class="modal-header">
+  <h3>Results Entry</h3>
+</div>
+
+<h1>TOP THREE</h1>
+<form >
+  <div class=>
+
+  
+
+      <div class="col-md-3 subscribe-btn-container">
+        <p class="subscribe-btn" href="#">Winner</p>
+        <select ng-model="topThree.winner" ng-options='queen.name for queen in queens'></select>
+      </div>
+
+
+      <div class="col-md-3 subscribe-btn-container">
+        <p class="subscribe-btn" href="#">RunnerUp</p>
+        <select ng-model="topThree.runnerUp" ng-options='queen.name for queen in queens'></select>
+      </div>
+
+      <div class="col-md-3 subscribe-btn-container">
+        <p class="subscribe-btn" href="#">TopThree</p>
+        <select ng-model="topThree.topThree" ng-options='queen.name for queen in queens'></select>
+      </div>
+
+      <div class="col-md-3 subscribe-btn-container">
+        <p class="subscribe-btn" href="#">MIS CONG</p>
+        <select ng-model="topThree.con" ng-options='queen.name for queen in queens'></select>
+      </div>
+
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-get-started" ng-click="submitTopThreeResult(topThree)">OK</button>
+  </div>
+</form>
+
+<h1>WEEKLY</h1>
+<form >
+  <div class=>
+
+    <div class="form-group">
+      <label>Week</label>
+      <input type="text" name="username" class="form-control" ng-model="user.week">
+    </div>
+
+      <div class="col-md-3 subscribe-btn-container">
+        <p class="subscribe-btn" href="#">Winner</p>
+        <select ng-model="user.winner" ng-options='queen.name for queen in queens'></select>
+      </div>
+
+      <div class="col-md-3 subscribe-btn-container">
+        <p class="subscribe-btn" href="#">Runner-Up</p>
+      <select ng-model="user.runnerUp" ng-options='queen.name for queen in queens'></select>
+      </div>
+
+      <div class="col-md-3 subscribe-btn-container">
+        <p class="subscribe-btn" href="#">Bottom</p>
+        <select ng-model="user.bottom" ng-options='queen.name for queen in queens'></select>
+      </div>
+
+      <div class="col-md-3 subscribe-btn-container">
+        <p class="subscribe-btn" href="#">Eliminated</p>
+        <select ng-model="user.eliminated" ng-options='queen.name for queen in queens'></select>
+      </div>
+
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-get-started" ng-click="submitWeeklyResult(user)">OK</button>
+  </div>
+</form>
+
+<h1>TOOT AND BOOT</h1>
+
+<!-- TOOT AND BOOT -->
+<form >
+  <div class=>
+
+    <div class="form-group">
+      <label>Week</label>
+      <input type="text" name="week" class="form-control" ng-model="toot.week">
+    </div>
+
+
+    <div class="form-group">
+      <label>Raja</label>
+      <input type="text" name="raven" class="form-control" ng-model="toot.raven">
+    </div>
+
+    <div class="form-group">
+      <label>Raven</label>
+      <input type="text" name="raja" class="form-control" ng-model="toot.raja">
+    </div>
+
+
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-get-started" ng-click="submitTootResult(toot)">OK</button>
+  </div>
+</form>
